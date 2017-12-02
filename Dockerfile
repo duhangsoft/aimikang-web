@@ -13,7 +13,7 @@ RUN \
   apt-get install -y nginx && \
   rm -rf /var/lib/apt/lists/* && \
   echo "\ndaemon off;" >> /etc/nginx/nginx.conf && \
-  echo "aimikang-tttttaaaa" >> /var/www/html/index.html && \
+  echo "aimikang-tttttaaaa4444" >> /var/www/html/index.html && \
   chown -R www-data:www-data /var/lib/nginx
 
 # Define mountable directories.

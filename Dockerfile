@@ -5,7 +5,7 @@
 #
 
 # Pull base image.
-FROM dockerfile/ubuntu
+FROM ubuntu
 
 # Install Nginx.
 RUN \
@@ -23,7 +23,6 @@ VOLUME ["/etc/nginx/sites-enabled", "/etc/nginx/certs", "/etc/nginx/conf.d", "/v
 WORKDIR /etc/nginx
 
 # Define default command.
-CMD [ "echo 'nginx-aimikang' >> /var/www/html/index.html" ]
 CMD ["nginx"]
 
 # Expose ports.
